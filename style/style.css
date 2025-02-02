@@ -8,7 +8,7 @@
   color: #fff;
 }
 body {
-  background: url(../images/bg-desktop.svg) no-repeat;
+  background: url(../images/bg-desktop.svg) center no-repeat;
   background-size: cover;
   background-color: hsl(257, 40%, 49%);
 }
@@ -99,18 +99,20 @@ img {
   fill: hsl(300, 69%, 71%) !important;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
   body {
+    padding: 0px 20px;
     background: url(../images/bg-mobile.svg) no-repeat;
-    background-position: center;
     background-size: contain;
     background-color: hsl(257, 40%, 49%);
   }
   .container {
-    padding: 20px;
+    display: initial;
+    padding: 40px;
   }
   .header {
     padding-top: 0px;
+    padding-bottom: 20px;
   }
   .header img {
     width: 150px;
@@ -129,7 +131,7 @@ img {
   .title {
     justify-self: center;
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
   .long-text {
     justify-self: center;
@@ -138,6 +140,7 @@ img {
   }
   .button {
     justify-self: center;
+    margin-bottom: 20px;
   }
   .footer {
     padding: 0;
