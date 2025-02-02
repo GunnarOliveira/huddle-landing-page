@@ -47,21 +47,28 @@ img {
   font-family: "Poppins";
   font-weight: 600;
   font-size: 3rem;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .long-text {
   max-width: 55ch;
   font-size: 1.275rem;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .button {
-  width: 180px;
+  width: 140px;
   justify-self: start;
+  padding: 16px 32px;
+  font-size: 1.2rem;
   text-align: center;
-  padding: 12px 24px;
   border-radius: 2rem;
-  color: hsl(257, 40%, 49%);
   background: #fff;
+  box-shadow: 5px 5px 10px hsla(274, 0%, 0%, 0.5);
+  color: hsl(257, 40%, 49%);
+  transition: 0.3s;
+}
+.button:hover {
+  color: #fff;
+  background: hsl(300, 69%, 71%);
 }
 .footer {
   box-sizing: border-box;
@@ -74,13 +81,25 @@ img {
   gap: 20px;
 }
 .social-item {
+  display: flex;
+  align-items: center;
   border: 2px solid #fff;
   padding: 12px;
   border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
 }
-.social-item img {
+.social-item svg {
   width: 20px;
+  height: 20px;
 }
+.social-item:hover {
+  border-color: hsl(300, 69%, 71%);
+}
+.social-item:hover svg {
+  fill: hsl(300, 69%, 71%) !important;
+}
+
 @media (max-width: 1200px) {
   body {
     background: url(../images/bg-mobile.svg) no-repeat;
@@ -125,7 +144,8 @@ img {
     padding: 0;
     justify-content: center;
   }
-  .social-item img {
+  .social-item svg {
     width: 16px;
+    height: 16px;
   }
 }
