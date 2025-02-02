@@ -50,7 +50,7 @@ git clone https://github.com/GunnarOliveira/huddle-landing-page.git
 
 ## Screenshot 👀📸
 
-![Design preview for the project](./images/design-preview.jpg)
+![Design preview for the project](./desktop-preview.jpg)
 
 # Acknowledgments 🙏
 
