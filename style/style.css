@@ -20,7 +20,7 @@ img {
   min-height: 100dvh;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0px 40px;
+  padding: 0px 60px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -50,6 +50,7 @@ img {
 }
 .long-text {
   font-size: 1.275rem;
+  max-width: 50ch;
   margin-bottom: 20px;
 }
 .button {
